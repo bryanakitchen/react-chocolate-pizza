@@ -31,7 +31,7 @@ export default class IngredientsList extends React.Component {
 export class CheckBoxLeft extends React.Component {
     render() {
         return (
-            <div className='l-inline'>
+            <div className='recipe-left'>
                 <input type="checkbox"/>
                 {this.props.ingredient}
             </div>

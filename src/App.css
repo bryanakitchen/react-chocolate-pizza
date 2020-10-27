@@ -1,9 +1,26 @@
 /* @font-face { font-family: 'Chilanka';  url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap')} */
 
 body {
-    padding: 0px;
+    padding: 0px;  
     margin: auto;
-    width: 1000px;
+    /* width: 1000px; */
+    width: 700px;
+    height: auto;
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px 55px 470px 250px 320px 50px 100px 50px 50px;
+    justify-content: center;
+    font-family: 'Chilanka' url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap')
+
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  grid-row: 1/ span 1;
+  grid-column: 1/ span 2;
 }
 
 .big-logo {
@@ -27,6 +44,170 @@ body {
 .head-social {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
+}
+
+.hr {
+  grid-column: 1/ span 2;
+  /* background-image: url('./assets/hr-img.png'); */
+  background-repeat: repeat;
+  margin-top: 20px;
+  width: 100%;
+  height: 10px;
+}
+
+.chocolate-print-row {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  align-items: baseline;
+  grid-row: 3/ span 1;
+  
+}
+
+.choco-text-sub-text {
+  flex: 50%;
+}
+
+.chocolate-pizza-text {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.post-date {
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 10px;
+  color: rgb(184, 180, 180);
+}
+
+.print {
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 13px;
+  color: rgb(184, 180, 180);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: 3px;
+}
+
+.chocolate-pizza-img {
+  grid-column: 1/ span 2;
+  height: auto;
+  width: 700px;
+  margin-top: 10px;
+  grid-row: 4/ span 1;
+}
+
+.instructions {
+  grid-row: 5/ span 1;
+  grid-column: 1/ span 2;
+  font-family: 'Times', Times, serif;
+  margin-bottom: 10px;
+  color: rgb(136, 136, 136);
+}
+
+p {
+  text-indent: 30px;
+  margin: 15px 0px;
+}
+
+.recipe {
+  grid-row: 6/ span 1;
+  font-family: 'Chilanka', cursive;
+  height: 300px;
+  /* background-image: url('./assets/list-bg.png'); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.recipe-left {
+  grid-column: 1/ span 1;
+  margin: 50px;
+  width: 250px;
+}
+
+.r-inline {
+  display: flex;
+  flex-direction: row;
+  /* justify-self: flex-start; */
+  padding: 4px;
+}
+
+.recipe-right {
+  grid-column: 2/ span 1;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+}
+
+.bio-button {
+  grid-row: 8/ span 1;
+  grid-column: 1/ span 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+  margin-top: 10px;
+}
+
+.van-name {
+  font-size: 15px;
+  color: rgb(75, 75, 75);
+  margin-left: 5px;
+}
+
+.van-bio {
+  font-size: 12px;
+  color: rgb(136, 136, 136);
+  margin-left: 5px;
+  width: 375px;
+}
+
+.share-button {
+  background-color: hsla(12, 78%, 37%, 0.657);
+  font-family: 'Saira Condensed', sans-serif;
+  border: none;
+  color: white;
+  margin-left: 90px;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+}
+
+.silverware-hr {
+  grid-row: 9/ span 1;
+  grid-column: 1/ span 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 45px;
+  
+}
+
+.hr-left {
+  grid-row: 9/ span 1;
+  width: 300px;
+}
+
+.hr-right {
+  grid-row: 9/ span 1;
+  width: 300px;
+}
+
+footer {
+  grid-row: 10/ span 1;
+  grid-column: 1/ span 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 10px;
+  color: lightgrey;
 }
