@@ -19,7 +19,7 @@ export class RepeatImage extends React.Component {
     render() {
         return (
             <div>
-                <img className="hr" src={this.props.image} alt="repeated hash"></img>
+                <img className="hr2" src={this.props.image} alt="repeated hash"></img>
             </div>
         )
     }
