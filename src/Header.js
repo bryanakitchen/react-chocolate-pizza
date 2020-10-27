@@ -14,6 +14,7 @@ export default class Header extends React.Component {
                 <Button image="./assets/pint-icon.png"/>
                 <Button image="./assets/rss-icon.png"/>
                 <Button image="./assets/mail-icon.png"/>
+                <RepeatImage image="./assets/hr-img.png"/>
             </div>
         )
     }
@@ -53,3 +54,12 @@ export class Button extends React.Component {
     }
 }
 //hr repeat image
+export class RepeatImage extends React.Component {
+    render() {
+        return (
+            <div>
+                <img className="hr" src={this.props.image} alt="repeated hash"></img>
+            </div>
+        )
+    }
+}
