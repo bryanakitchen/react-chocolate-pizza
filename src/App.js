@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './Header.js';
 import MainImage from './MainImage.js';
+import Recipe from './Recipe.js';
+import IngredientsList from './IngredientList.js';
 
 export default class App extends React.Component {
     render() {
@@ -8,7 +10,8 @@ export default class App extends React.Component {
             <div>
                 <Header /> 
                 <MainImage /> 
-
+                <Recipe /> 
+                <IngredientsList />
             </div>
         );
     }
