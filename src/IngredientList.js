@@ -41,7 +41,7 @@ export class CheckBoxLeft extends React.Component {
 export class CheckBoxRight extends React.Component {
     render() {
         return (
-            <div className='r-inline'>
+            <div className='recipe-right'>
                 <input type="checkbox"/>
                 {this.props.ingredient}
             </div>

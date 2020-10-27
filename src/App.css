@@ -29,20 +29,28 @@ header {
 }
 
 .head-logo-text {
+    position: relative;
+    left: -5px;
+    top: -55px;
     font-family: 'Yellowtail', cursive;
     font-weight: bolder;
     font-size: 2rem;
-    margin-left: 5px;
+    margin-left: 50px;
 }
 
 .head-logo-sub-text {
+    position: relative;
+    left: 50px;
+    top: -58px;
     font-family: 'Saira Condensed', sans-serif;
     font-size: 10px;
-    margin-left: 5px;
+
 }
 
 .head-social {
-    display: flex;
+    float: right;
+    position: relative;
+    bottom: 100px;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
@@ -52,7 +60,6 @@ header {
   grid-column: 1/ span 2;
   /* background-image: url('./assets/hr-img.png'); */
   background-repeat: repeat;
-  margin-top: 20px;
   width: 100%;
   height: 10px;
 }
@@ -86,10 +93,15 @@ header {
   font-family: 'Saira Condensed', sans-serif;
   font-size: 13px;
   color: rgb(184, 180, 180);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-left: 3px;
+  position: relative;  
+  left: 840px;
+  top: -40px;
+}
+.printimg {
+  position: relative;  
+  left: 825px;
+  top: -25px;
+
 }
 
 .chocolate-pizza-img {
@@ -113,31 +125,28 @@ p {
   margin: 15px 0px;
 }
 
-.recipe {
-  grid-row: 6/ span 1;
-  font-family: 'Chilanka', cursive;
-  height: 300px;
-  /* background-image: url('./assets/list-bg.png'); */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+
 
 .recipe-left {
-  grid-column: 1/ span 1;
-  margin: 50px;
-  width: 250px;
-}
+  position: relative;
+  left: 100px; 
+  font-family: 'Just Another Hand', cursive url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
 
-.r-inline {
-  display: flex;
-  flex-direction: row;
-  /* justify-self: flex-start; */
-  padding: 4px;
+
 }
 
 .recipe-right {
-  grid-column: 2/ span 1;
+  position: relative;
+  left: 500px; 
+  bottom: 240px;
+  font-family: 'Just Another Hand', cursive url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+
+}
+
+.recipe {
+  position: relative;
+  bottom: 485px;
+  z-index: -1;
 }
 
 input {
@@ -147,22 +156,23 @@ input {
 }
 
 .bio-button {
-  grid-row: 8/ span 1;
-  grid-column: 1/ span 2;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: auto;
-  margin-top: 10px;
+  position: relative;
+  bottom: 375px;
 }
 
 .van-name {
+  position: relative;
+  left: 80px;
+  bottom: 470px;
   font-size: 15px;
   color: rgb(75, 75, 75);
   margin-left: 5px;
 }
 
 .van-bio {
+  position: relative;
+  left: 80px;
+  bottom: 490px;
   font-size: 12px;
   color: rgb(136, 136, 136);
   margin-left: 5px;
@@ -170,6 +180,9 @@ input {
 }
 
 .share-button {
+  position: relative;
+  left: 600px;
+  bottom: 550px;
   background-color: hsla(12, 78%, 37%, 0.657);
   font-family: 'Saira Condensed', sans-serif;
   border: none;
@@ -192,16 +205,27 @@ input {
   
 }
 
-.hr-left {
-  grid-row: 9/ span 1;
-  width: 300px;
+.hr2 {
+  grid-column: 1/ span 2;
+  position: relative;
+  bottom: 400px;
+  /* background-image: url('./assets/hr-img.png'); */
+  background-repeat: repeat;
+  width: 100%;
+  height: 10px;
 }
 
-.hr-right {
-  grid-row: 9/ span 1;
-  width: 300px;
+.copyright {
+  position: relative;
+  left: 330px;
+  bottom: 500px;
 }
 
+.small-logo {
+  position: relative;
+  left:430px;
+  bottom: 500px;
+}
 footer {
   grid-row: 10/ span 1;
   grid-column: 1/ span 2;

@@ -29,7 +29,7 @@ export class SmallLogo extends React.Component {
 export class Copyright extends React.Component {
     render() {
         return (
-            <div>
+            <div className="copyright">
                 Delicious &copy; 2013 All Rights Reserved. <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Proudly published with Ghost.
             </div>
         )

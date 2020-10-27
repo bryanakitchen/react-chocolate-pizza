@@ -35,7 +35,7 @@ export class Print extends React.Component {
     render() {
         return (
             <div>
-                <img className="print" src="./assets/print-icon.png" alt="print icon"></img>
+                <img className="printimg" src="./assets/print-icon.png" alt="print icon"></img>
                 <div className="print">PRINT</div>
             </div>
         )
